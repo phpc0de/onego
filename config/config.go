@@ -5,6 +5,13 @@ import (
 	"time"
 )
 
+type Redisconfig struct {
+	Addr              string
+	password               string
+	DB              string
+
+}
+	
 // ItemRuleConfig contains information about novel's rules
 type ItemRuleConfig struct {
 	NovelName              string
@@ -87,6 +94,12 @@ var (
 		NovelAbstract:          "p.result-game-item-desc",
 		NovelLatestChapterName: "div.result-game-item-info p.result-game-item-info-tag a.result-game-item-info-tag-item",
 		NovelLatestChapterUrl:  "div.result-game-item-info p.result-game-item-info-tag a.result-game-item-info-tag-item",
+	}
+	Rconf = Redisconfig{
+		Addr:              "127.0.0.1:6938",
+		password:               "",
+		DB: 0,
+
 	}
 	NovelsRulesMap = map[string]NovelRule{
 		"10": NovelRule{
