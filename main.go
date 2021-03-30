@@ -5,6 +5,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"onego/apis"
+	"onego/int"
 )
 
 // Index returns a home page
@@ -13,6 +14,8 @@ func Index(c *gin.Context) {
 }
 
 func main() {
+	int.Mysql()
+	int.Redis()
 	// gin.SetMode(gin.ReleaseMode)
 	router := gin.Default()
 	router.GET("/", Index)
