@@ -2,6 +2,7 @@ package int
 import (
  _ "github.com/go-sql-driver/mysql"
  "github.com/go-xorm/xorm"
+   "one/global"
  "log"
 )
   
@@ -38,4 +39,5 @@ func Mysql() {
  if err := x.Sync(new(Novel)); err != nil {
  log.Fatal("数据表同步失败:", err)
  }
+ 		global.NB_DB = x
 }
