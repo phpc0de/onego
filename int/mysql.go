@@ -29,7 +29,7 @@ type Novel struct {
 //定义orm引擎
 var x *xorm.Engine 
 //创建orm引擎
-func init() {
+func Mysql() {
  var err error
  x, err = xorm.NewEngine("mysql", "root:root@tcp(127.0.0.1:3306)/xorm?charset=utf8mb4")
  if err != nil {
