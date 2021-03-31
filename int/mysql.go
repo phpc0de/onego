@@ -36,8 +36,7 @@ func Mysql() {
  if err != nil {
  log.Fatal("数据库连接失败:", err)
  }
- if err := x.Sync(new(Novel)); err != nil {
- log.Fatal("数据表同步失败:", err)
- }
+
+ 
  		global.NB_DB = x
 }
