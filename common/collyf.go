@@ -1,4 +1,4 @@
-package fetcher
+package common
 
 import (
 	"github.com/gocolly/colly/v2"
