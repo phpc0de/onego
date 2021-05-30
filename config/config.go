@@ -1,9 +1,6 @@
 package config
 
-import (
-	"math/rand"
-	"time"
-)
+
 
 type Redisconfig struct {
 	Addr              string
