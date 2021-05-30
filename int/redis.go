@@ -2,9 +2,9 @@ package int
 
 import (
 	"github.com/go-redis/redis"
-  "one/config"
+  "onego/config"
 
-  "one/global"
+  "onego/global"
 )
 
 var (
