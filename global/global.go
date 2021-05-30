@@ -2,7 +2,6 @@ package global
 
 import (
 	"github.com/go-redis/redis"
-	"onego/config"
   "github.com/go-xorm/xorm"
 )
 
