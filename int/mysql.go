@@ -2,7 +2,7 @@ package int
 import (
  _ "github.com/go-sql-driver/mysql"
  "github.com/go-xorm/xorm"
-   "one/global"
+   "onego/global"
  "log"
 )
   
