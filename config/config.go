@@ -8,7 +8,7 @@ import (
 type Redisconfig struct {
 	Addr              string
 	password               string
-	DB              string
+//	DB              string
 
 }
 	
@@ -98,7 +98,7 @@ var (
 	Rconf = Redisconfig{
 		Addr:              "127.0.0.1:6938",
 		password:               "",
-		DB: 0,
+//		DB: 0,
 
 	}
 	NovelsRulesMap = map[string]NovelRule{
