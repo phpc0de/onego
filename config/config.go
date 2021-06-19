@@ -1,7 +1,8 @@
 package config
 
-
-
+import (
+	"fmt"
+)
 type Redisconfig struct {
 	Addr              string
 	password               string
@@ -191,3 +192,10 @@ var (
 		},
 	}
 )
+
+func GetUserAgent() string {
+	return fmt.Sprintf("Mozilla/5.0 AppleWebKit/%d.%d (KHTML, like Gecko) Chrome/%d.1.%d.%d Safari/%d.%d",
+		529+rand.Intn(10), 80+rand.Intn(10), 54+rand.Intn(10), 2200+rand.Intn(100), 40+rand.Intn(10),
+		533+rand.Intn(10), 35+rand.Intn(10),
+	)
+}
